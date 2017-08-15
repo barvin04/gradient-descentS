@@ -5,7 +5,7 @@ data[:] = (value for value in data if value != '\n')
 
 def compute_errors_for_line_given_points(b,m,points):
     totalError = 0
-    for i in range(0,len(points)):   #points => data
+    for i in range(0,len(points)):   #points => data .
         x = float(points[i][0].strip('\t'))
         y = float(points[i][1].strip('\n'))
         totalError += (y - (m*x + b))**2
