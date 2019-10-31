@@ -11,7 +11,7 @@ def compute_errors_for_line_given_points(b,m,points):
         totalError += (y - (m*x + b))**2
 
     return totalError/float(len(points))
-
+#step_gradient descent formula
 def step_gradient(b_current, m_current, points, learningRate):
     b_gradient = 0
     m_gradient = 0
